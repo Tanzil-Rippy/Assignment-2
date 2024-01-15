@@ -1,0 +1,57 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+/* universal style */
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0px 135px;
+}
+
+/* for nav style */
+
+/* Banner style */
+.banner{
+    width: 1170px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00)  100%),url(./Images/banner.png);
+    border-radius: 16px;
+}
+.banner-titel-discription {
+   
+}
+.banner-titel-discription h1 {
+    color: #FFF;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.banner-titel-discription p {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.banner-input {
+    margin: 0px 175px;
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+}
+.banner-input-fild{
+    width: 174px;
+height: 52px;
+border-radius: 8px;
+background: #FFF;
+}
+.banner-btn{
+    width: 174px;
+height: 52px;
+border-radius: 8px;
+background: #FF5400;
+}
