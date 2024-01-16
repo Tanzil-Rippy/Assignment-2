@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+    }
+
+    .row {
+      display: flex;
+      gap: 24px;
+      flex-grow: 1;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="image" style="background-color: #3498db;">
+        <div class="text">Text 1</div>
+      </div>
+      <div class="image" style="background-color: #e74c3c;">
+        <div class="text">Text 2</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="image" style="background-color: #2ecc71; flex-grow: 2;">
+        <div class="text">Text 3</div>
+      </div>
+      <div class="image" style="background-color: #f39c12;">
+        <div class="text">Text 4</div>
+      </div>
+      <div class="image" style="background-color: #9b59b6;">
+        <div class="text">Text 5</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="image" style="background-color: #34495e; flex-grow: 3;">
+        <div class="text">Text 6</div>
+      </div>
+      <div class="image" style="background-color: #d35400; flex-grow: 1;">
+        <div class="text">Text 7</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+In this example, I've used Flexbox for the overall container and individual rows. The flex-grow property is used to control the size of specific items within the rows. I've also included a media query to make the layout responsive for devices with a maximum width of 768 pixels.
+
+Feel free to customize the colors, text, and other styles according to your design requirements.
+
+User
+do it again using grid
+ChatGPT
+Certainly! Here's an example of the layout using CSS Grid:
+<!-- 
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 24px;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .text {
+      text-align: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .row1 {
+      grid-row: 1 / span 1;
+    }
+
+    .row2 {
+      grid-row: 2 / span 1;
+    }
+
+    .row3 {
+      grid-row: 3 / span 1;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+      }
+
+      .row1, .row2, .row3 {
+        grid-column: 1 / span 1;
+      }
+
+      .row3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image row1" style="background-color: #3498db;">
+      <div class="text">Text 1</div>
+    </div>
+    <div class="image row2" style="background-col
+    </div>
+    <div class="image row1" style="background-color: #e74c3c;">
+      <div class="text">Text 2</div>or: #2ecc71;">
+      <div class="text">Text 3</div>
+    </div>
+    <div class="image row2" style="background-color: #f39c12;">
+      <div class="text">Text 4</div>
+    </div>
+    <div class="image row2" style="background-color: #9b59b6;">
+      <div class="text">Text 5</div>
+    </div>
+    <div class="image row3" style="background-color: #34495e;">
+      <div class="text">Text 6</div>
+    </div>
+    <div class="image row3" style="background-color: #d35400;">
+      <div class="text">Text 7</div>
+    </div>
+  </div>
+
+</body>
+</html>
+In this example, I've used CSS Grid to create the overall layout with three rows and two columns. The grid-row and grid-column properties are used to position items in specific grid areas. The media query is included to make the layout responsive for devices with a maximum width of 768 pixels.
+
+
+
+
+
+Message ChatGPT…
+
+ChatGPT can make mistakes. Consider checking important information. -->
