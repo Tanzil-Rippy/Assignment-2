@@ -21,7 +21,7 @@ nav {
 }
 nav h1{
         color: var(--Dark-01, #131318);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
 }
 nav a {
@@ -54,8 +54,6 @@ font-weight: 700;
     background-repeat: no-repeat;
 }
 
-.banner-titel-discription {}
-
 .banner-titel-discription h1 {
     color: #FFF;
     font-size: 4rem;
@@ -68,7 +66,7 @@ font-weight: 700;
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    /* line-height: 26px; */
+    
 }
 
 .banner-input {
@@ -134,7 +132,7 @@ font-weight: 800;
 text-align: center;
 font-size: 1rem;
 font-weight: 400;
-/* line-height: 26px;  */
+
 }
 /* chat bot  */
 .container {
@@ -210,12 +208,7 @@ width: 50%;
 margin: 0 auto;
 margin-top: 30px;
 }
-.sepcia-head{
 
-}
-.special-end{
-
-}
 .special-mid{
     display: flex;
     gap: 24px;
@@ -280,7 +273,7 @@ margin-bottom: 20px;
 }
 .cupon h4{
     color: #FFF;
-font-size: 32px;
+font-size: 2rem ;
 font-weight: 800;
 margin: 0 auto;
 }
@@ -383,13 +376,101 @@ backdrop-filter: blur(2.5px);
 @media only screen and (max-width:600px){
     
 body{
-    margin: 10px;
+    /* margin: 10px; */
+    margin: 0 auto;
     width: 100%;
 }
+/* nav */
+nav{
+    width: ;
+    /* justify-content: space-around; */
+}
+.footer-aa{
+    display: none;
+}
+.menubar{
+    display: unset;
+    width: 34px;
+height: 34px;
+}
+/* popular tour start */
 
+.popular-tour{
+    /* display: unset; */
+    flex-direction: column;
+    width: 335px;
+    margin: 0 auto;
+}
+.popular-tour img{
+width: 335px;
+}
+/* destination */
+.destination{
+    width:  335px;
+    margin: 0 auto;
+}
+.destination img{
+   width: 335px;
+}
+.row {
+    flex-direction: column;
+  }
 
+/* we special part */
 
+.special-mid{
+    flex-direction: column;
+}
+.special-mid div{
+    width: 335px;
+height: 289px;
+}
+.our-special-price{
+width: 335px;
+}
+.we-special{
+    margin: 0 auto;
+}
+/* popular tour  */
+.popular-tour{
+    flex-direction: column;
+    margin-top: 100px;
+}
+/* get lost */
 
-
-
+/* news letter */
+.news-letter{
+  flex-direction: column;
+  margin: 0 auto;
+}
+.newsletter-1{
+    width: 335px;
+    padding: 20px 20px;
+    /* height: 400px; */
+}
+.newsletter-1 >input ,button{
+    width: 288px;
+    height: 52px;
+}
+.newsletter-1 button{
+    width: 288px;
+height: 52px;
+flex-shrink: 0;
+}
+.newsletter-11{
+    width: 200px;
+height: 300px;
+}
+.cupon{
+    width: 214.023px;
+height: 79.268px;
+transform: rotate(-19.628deg);
+right: 290px;
+}
+.deals{
+    display: none;
+}
+.banner{
+ display: none;
+}
 }
